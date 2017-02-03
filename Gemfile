@@ -6,6 +6,8 @@ gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+gem 'devise'
+gem 'milia'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -50,3 +52,5 @@ group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
+gem 'recaptcha', require: 'recaptcha/rails'
+gem 'activerecord-session_store', github: 'rails/activerecord-session_store'
